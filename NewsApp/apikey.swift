@@ -1,5 +1,5 @@
 //
-//  api.swift
+//  apikey.swift
 //  NewsApp
 //
 //  Created by 神村亮佑 on 2020/08/26.
