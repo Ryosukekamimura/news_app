@@ -16,17 +16,24 @@ struct ContentView: View {
     
     
     var body: some View {
-        NavigationView{
-            List{
-                ForEach(list.newsdatas, id:\.self){ article in
-                    NavigationLink(destination: webView(url: article.url), label: {
-                        CardView(article: article)
-                    })
-                }.navigationBarTitle("NewTok")
+        
+        NavigationView {
+            GeometryReader { geometry in
+                ScrollView(.vertical, showsIndicators: false) {
+                    VStack(alignment: .leading){
+                        ForEach(self.list.newsdatas, id:\.self) { article in
+                            CardView(article: article)
+                        }
+                        Spacer()
+                    }.frame(width: geometry.size.width)
+                }
+                .foregroundColor(.black)
+                .navigationBarTitle(Text("NewTok"))
             }
-            
-            
         }
+        
+        
+        
     }
 }
 

@@ -14,13 +14,14 @@ struct CardView: View {
     var article : News
     
     var body: some View {
-        HStack(spacing: 15){
+        ZStack{
+            
             if article.image != "" {
                 WebImage(url: URL(string: article.image)!, options: .highPriority, context: nil)
                     .resizable()
-                    .frame(width: 100, height: 130)
+                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 1.5)
                     .cornerRadius(20)
-                    .edgesIgnoringSafeArea(.all)
+                    .edgesIgnoringSafeArea(.top)
             }else {
                 Image("noimage")
                     .resizable()
@@ -28,17 +29,22 @@ struct CardView: View {
                     .cornerRadius(20)
                     .edgesIgnoringSafeArea(.top)
             }
-                        
+            
+            
             VStack(alignment: .center, spacing: 10){
                 Text(article.title)
-                    .font(.headline)
-                    .foregroundColor(.black)
+                    .font(.title)
+                    .foregroundColor(.white)
                 Text(article.desc)
                     .lineLimit(2)
-                    .foregroundColor(.black)
-            }
-        }.padding(.vertical, 15)
+                    .foregroundColor(.white)
+            }.background(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5)))
+        }
+        
+        
     }
+    
+    
 }
 
 

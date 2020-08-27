@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -193,6 +193,7 @@
 			);
 			mainGroup = 92509C2624F60C44008C160E;
 			packageReferences = (
+				929BE84524F7793700D0C9FC /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 92509C3024F60C45008C160E /* Products */;
 			projectDirPath = "";
@@ -472,6 +473,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		929BE84524F7793700D0C9FC /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCVersionGroup section */
 		92509C3624F60C45008C160E /* NewsApp.xcdatamodeld */ = {
