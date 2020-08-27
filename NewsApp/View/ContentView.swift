@@ -19,28 +19,14 @@ struct ContentView: View {
     
     var body: some View {
         NavigationView{
-            List(list.newsdatas, id:\.self){ article in
-                NavigationLink(destination: webView(url: article.url), label: {
-                    HStack(spacing: 15){
-                        
-                        VStack(alignment: .center, spacing: 10){
-                            Text(article.title).font(.headline)
-                            Text(article.desc).lineLimit(2)
-                        }
-                        
-                        if article.image != "" {
-                            WebImage(url: URL(string: article.image)!, options: .highPriority, context: nil)
-                                .resizable()
-                                .frame(width: 120, height: 130)
-                                .cornerRadius(20)
-                        }
-                    }.padding(.vertical, 15)
-                    
-                })
-                
-                
-                
-            }.navigationBarTitle("NewTok")
+            List{
+                ForEach(list.newsdatas, id:\.self){ article in
+                    NavigationLink(destination: webView(url: article.url), label: {
+                        CardView(article: article)
+                    })
+                }.navigationBarTitle("NewTok")
+            }
+            
             
         }
     }

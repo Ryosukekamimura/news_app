@@ -1,55 +1,55 @@
 {
   "images" : [
     {
-      "filename" : "news.png",
+      "filename" : "news_icon.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "20x20"
     },
     {
-      "filename" : "newsのコピー.png",
+      "filename" : "news_icon-1.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "20x20"
     },
     {
-      "filename" : "newsのコピー2.png",
+      "filename" : "news_icon-2.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "29x29"
     },
     {
-      "filename" : "newsのコピー3.png",
+      "filename" : "news_icon-3.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "29x29"
     },
     {
-      "filename" : "newsのコピー4.png",
+      "filename" : "news_icon-4.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "40x40"
     },
     {
-      "filename" : "newsのコピー5.png",
+      "filename" : "news_icon-5.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "40x40"
     },
     {
-      "filename" : "newsのコピー5-1.png",
+      "filename" : "news_icon-6.png",
       "idiom" : "iphone",
       "scale" : "2x",
       "size" : "60x60"
     },
     {
-      "filename" : "newsのコピー6.png",
+      "filename" : "news_icon-7.png",
       "idiom" : "iphone",
       "scale" : "3x",
       "size" : "60x60"
     },
     {
-      "filename" : "newsのコピー7.png",
+      "filename" : "news_icon-8.png",
       "idiom" : "ios-marketing",
       "scale" : "1x",
       "size" : "1024x1024"

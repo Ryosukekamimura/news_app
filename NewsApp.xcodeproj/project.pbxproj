@@ -20,6 +20,7 @@
 		92F5355624F723C500CBF2DF /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F5355524F723C500CBF2DF /* News.swift */; };
 		92F5355824F7242200CBF2DF /* GetData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F5355724F7242200CBF2DF /* GetData.swift */; };
 		92F5355A24F7245B00CBF2DF /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F5355924F7245B00CBF2DF /* WebView.swift */; };
+		92F5355C24F73A6700CBF2DF /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92F5355B24F73A6700CBF2DF /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		92F5355524F723C500CBF2DF /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 		92F5355724F7242200CBF2DF /* GetData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetData.swift; sourceTree = "<group>"; };
 		92F5355924F7245B00CBF2DF /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		92F5355B24F73A6700CBF2DF /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		9F2BE926B8D530A9B98507F4 /* Pods-NewsApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsApp.debug.xcconfig"; path = "Target Support Files/Pods-NewsApp/Pods-NewsApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				92509C3924F60C45008C160E /* ContentView.swift */,
+				92F5355B24F73A6700CBF2DF /* CardView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92F5355624F723C500CBF2DF /* News.swift in Sources */,
+				92F5355C24F73A6700CBF2DF /* CardView.swift in Sources */,
 				92F5355A24F7245B00CBF2DF /* WebView.swift in Sources */,
 				92509C3324F60C45008C160E /* AppDelegate.swift in Sources */,
 				9288AB3824F6490200171720 /* KeyManager.swift in Sources */,
@@ -408,6 +412,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"NewsApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4L3H8AS5LU;
 				ENABLE_PREVIEWS = YES;
@@ -416,6 +421,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kamimura.NewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -429,6 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.0.0;
 				DEVELOPMENT_ASSET_PATHS = "\"NewsApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 4L3H8AS5LU;
 				ENABLE_PREVIEWS = YES;
@@ -437,6 +444,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.kamimura.NewsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
