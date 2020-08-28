@@ -14,33 +14,39 @@ struct CardView: View {
     var article : News
     
     var body: some View {
-        ZStack{
-            
-            if article.image != "" {
-                WebImage(url: URL(string: article.image)!, options: .highPriority, context: nil)
-                    .resizable()
-                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height / 1.5)
-                    .cornerRadius(20)
-                    .edgesIgnoringSafeArea(.top)
-            }else {
-                Image("noimage")
-                    .resizable()
-                    .frame(width: 120, height: 130)
-                    .cornerRadius(20)
-                    .edgesIgnoringSafeArea(.top)
-            }
-            
-            
-            VStack(alignment: .center, spacing: 10){
-                Text(article.title)
-                    .font(.title)
-                    .foregroundColor(.white)
-                Text(article.desc)
-                    .lineLimit(2)
-                    .foregroundColor(.white)
-            }.background(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5)))
-        }
         
+        
+        
+        ZStack{
+            Group{
+                if article.image != "" {
+                    WebImage(url: URL(string: article.image)!, options: .highPriority, context: nil)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .edgesIgnoringSafeArea(.all)
+                }else {
+                    Image("noimage")
+                        .resizable()
+                        .frame(width: 120, height: 130)
+                        .cornerRadius(20)
+                        .edgesIgnoringSafeArea(.top)
+                }
+            }
+            NavigationLink(destination: webView(url: article.url)){
+                VStack {
+                    Spacer()
+                    
+                    VStack(alignment: .center, spacing: 10){
+                        Text(article.title)
+                            .font(.headline)
+                            .foregroundColor(.white)
+                        Text(article.desc)
+                            .lineLimit(2)
+                            .foregroundColor(.white)
+                    }.background(Color(#colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5)))
+                }
+            }
+        }
         
     }
     
@@ -57,3 +63,5 @@ struct CardView_Previews: PreviewProvider {
                                image: "https://static.chunichi.co.jp/image/article/size1/8/b/0/7/8b077a2a2338df1fcf66a2bba6bd882d_1.jpg"))
     }
 }
+
+

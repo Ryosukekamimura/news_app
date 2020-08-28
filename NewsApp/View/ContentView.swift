@@ -22,15 +22,19 @@ struct ContentView: View {
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(alignment: .leading){
                         ForEach(self.list.newsdatas, id:\.self) { article in
-                            CardView(article: article)
+                            
+                           
+                                    CardView(article: article)
+                            
+                            
                         }
-                        Spacer()
+                      
                     }.frame(width: geometry.size.width)
                 }
                 .foregroundColor(.black)
-                .navigationBarTitle(Text("NewTok"))
+                .navigationBarHidden(true)
             }
-        }
+        }.background(Color(.black).edgesIgnoringSafeArea(.all))
         
         
         
@@ -42,7 +46,6 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
-
 
 
 
