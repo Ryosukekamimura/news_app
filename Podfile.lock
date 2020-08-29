@@ -1,7 +1,7 @@
 PODS:
-  - SDWebImage (5.8.4):
-    - SDWebImage/Core (= 5.8.4)
-  - SDWebImage/Core (5.8.4)
+  - SDWebImage (5.9.0):
+    - SDWebImage/Core (= 5.9.0)
+  - SDWebImage/Core (5.9.0)
   - SDWebImageSwiftUI (1.5.0):
     - SDWebImage (~> 5.7)
   - SwiftyJSON (5.0.0)
@@ -17,7 +17,7 @@ SPEC REPOS:
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  SDWebImage: cf6922231e95550934da2ada0f20f2becf2ceba9
+  SDWebImage: 62ae4a18473520c67b79e9724c31a63599cc9423
   SDWebImageSwiftUI: 43687ffe232ddd33fe0659498b7ca9884fdd6b35
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
